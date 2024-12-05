@@ -1,0 +1,142 @@
+/* General styles for the body */
+body {
+  font-family: 'Papyrus', sans-serif; /* Applying the Roboto font */
+  background: url('Bg-Talegenie.png') no-repeat center center fixed;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Ensures the content is vertically centered on the full viewport height */
+  flex-direction: column;
+  overflow: hidden;
+}
+html, body {
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  height: 100%; /* Ensures the full height of the page is considered */
+}
+header {
+  position: sticky; /* Keeps the header at the top while scrolling */
+  top: 0; /* Sets the top offset to 0 */
+  z-index: 1000; /* Ensures the header stays above other elements */
+  background-color: #3498db; /* Keeps the background color visible */
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Ensures the header spans the full width of the page */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Styling for the header */
+header {
+  background-color: #6946e7; /* Your desired background color */
+  padding: 20px; /* Add padding inside the header */
+  text-align: center; /* Centers the header content */
+  width: auto; /* Automatically adjusts the width based on content */
+  margin: 0 auto; /* Centers the header */
+  border-radius: 8px; /* Optional: Adds rounded corners to the header */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.1); /* Increased shadow for stronger 3D effect */
+  transform: translateY(-5px); /* Adds a slight lift effect */
+}
+
+/* Styling for the h1 inside the header */
+header h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0; /* Removes the default margin of h1 */
+}
+
+/* Styling for the container holding the options and generate button */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: rgb(249, 249, 250);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow for stronger 3D effect */
+  margin-top: 20px;
+  width: 80%; /* You can adjust this based on how wide you want the box */
+  max-width: 600px;
+  transform: translateY(-5px); /* Slight lift for 3D effect */
+}
+
+/* Styling for the dropdown and other inputs */
+select, button {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button styling */
+button {
+  background-color: #6946e7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow to button for 3D effect */
+  transition: all 0.3s ease-in-out; /* Smooth transition for button hover effect */
+}
+
+button:hover {
+  background-color: #2b02bd;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  transform: translateY(-3px); /* Button lift effect on hover */
+}
+
+/* Styling for the generated story */
+.story-container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow for stronger 3D effect */
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px; /* Fixed height for the story container */
+  overflow-y: auto; /* Enables scrolling for long stories */
+  transform: translateY(-5px); /* Slight lift for 3D effect */
+}
+
+.story-output {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow for stronger 3D effect */
+  max-width: 80%;
+  max-height: 300px; /* Set a maximum height for the story output box */
+  overflow-y: auto; /* Enables vertical scrolling if content exceeds max-height */
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-5px); /* Slight lift for 3D effect */
+}
+
+.story-output p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.story-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Styling for the footer (if any) */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 40px;
+}
